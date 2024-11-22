@@ -1,0 +1,29 @@
+.about {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-direction: column;
+}
+  
+  .about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .about p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+  img{
+    width: 100%;
+  }
+  .progres{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }

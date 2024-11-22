@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "image": "/assets/pc.svg",
+        "beginnerLevel": "Beginner",
+        "courseTitle": "Webflow Basics",
+        "price": "$ 24.00 USD",
+        "buttonText": "Enroll Now"
+    },
+    {
+        "id": 2,
+        "image": "/assets/pc2.svg",
+        "beginnerLevel": "Intermediate",
+        "courseTitle": "Advanced CSS",
+        "price": "$ 34.00 USD",
+        "buttonText": "Join Now"
+    },
+    {
+        "id": 3,
+        "image": "/assets/pc3.svg",
+        "beginnerLevel": "Advanced",
+        "courseTitle": "React Mastery",
+        "price": "$ 49.00 USD",
+        "buttonText": "Get Started"
+    }
+]

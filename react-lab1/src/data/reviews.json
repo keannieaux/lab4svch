@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "image": "/assets/chel1.png",
+        "author": "Mollie Hall",
+        "job": "Design System Manager, @Company"
+    },
+    {
+        "id": 2,
+        "image": "/assets/chel2.png",
+        "author": "Mollie Hall",
+        "job": "Design System Manager, @Company"
+    },
+    {
+        "id": 3,
+        "image": "/assets/chel3.png",
+        "author": "Mollie Hall",
+        "job": "Design System Manager, @Company"
+    },
+    {
+        "id": 4,
+        "image": "/assets/chel4.png",
+        "author": "Mollie Hall",
+        "job": "Design System Manager, @Company"
+    },
+    {
+        "id": 5,
+        "image": "/assets/chel5.png",
+        "author": "Mollie Hall",
+        "job": "Design System Manager, @Company"
+    },
+    {
+        "id": 6,
+        "image": "/assets/chel6.png",
+        "author": "Mollie Hall",
+        "job": "Design System Manager, @Company"
+    }
+]

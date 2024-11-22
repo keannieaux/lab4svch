@@ -1,0 +1,15 @@
+/* Courses.css */
+.Courses {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px; /* Add some padding around the container */
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between grid items */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Optional: limit the maximum width */
+}
