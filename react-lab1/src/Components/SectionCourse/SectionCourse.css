@@ -1,0 +1,43 @@
+.section-courses { /* Updated class name */
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.content-courses { /* Updated class name */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title-courses { /* Updated class name */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.h2-text-size-big { /* No change needed */
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.button-explore-all { /* No change needed */
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.course-cards { /* Updated class name */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course-image { /* Updated class name */
+    width: 100px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}

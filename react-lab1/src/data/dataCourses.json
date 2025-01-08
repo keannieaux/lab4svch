@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Webflow Basics",
+      "description": "$ 24.00 USD",
+      "imageSrc": "/assets/pc.svg"
+    },
+    {
+      "name": "Advanced CSS",
+      "description": "$ 34.00 USD",
+      "imageSrc": "/assets/pc2.svg"
+    },
+    {
+      "name": "React Mastery",
+      "description": "$ 49.00 USD",
+      "imageSrc": "/assets/pc3.svg"
+    }
+  ]

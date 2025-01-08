@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 import './Header.css';
 import { Navbar, Nav, } from 'react-bootstrap';
 import Dropdown from '../Dopdown/dropdown'
+import { useTranslation } from 'react-i18next';
 
 function Header() {
+  const { t } = useTranslation(); 
     return (
         <header className="header">
             <div className="header1">
@@ -17,7 +19,9 @@ function Header() {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link href="#about"><Link to="/about" className="dm-sansFont text-a">About</Link></Nav.Link>
-          <Nav.Link href="#contact"><Link to="/reviews" className="dm-sansFont text-a">Reviews</Link></Nav.Link>
+          <Nav.Link href="#users"><Link to="/users" className="dm-sansFont text-a">Users</Link></Nav.Link>
+          <Nav.Link href="#courses"><Link to="/courses" className="dm-sansFont text-a">Courses</Link></Nav.Link>
+          <Nav.Link href="#contact"><Link to="/reviews" className="dm-sansFont text-a">{t('headerblock.res')}</Link></Nav.Link>
           <Nav.Link href="#contact"><Dropdown/></Nav.Link>
         </Nav>
       </Navbar.Collapse>

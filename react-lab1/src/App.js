@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Home from './Components/Home/Home';
@@ -8,6 +8,8 @@ import Courses from './Components/Courses/Courses';
 import Reviews from './Components/Reviews/ReviewsComponent';
 import NotFound from './Components/NotFound/notfound';
 import Loading from './Components/Spin/Spin';
+import CourseNew from './Components/Course/Course'
+import Users from './Components/User/User'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = () => {
@@ -23,7 +25,7 @@ const App = () => {
     }, []);
 
     return (
-        <Router>
+        <>
             <Header />
             <div className="App">
                 {loading ? (
@@ -32,14 +34,16 @@ const App = () => {
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
-                        <Route path="/courses" element={<Courses />} />
+                        <Route path="/course" element={<Courses />} />
                         <Route path="/reviews" element={<Reviews />} />
+                        <Route path="/courses" element={<CourseNew />} />
+                        <Route path="/users" element={<Users />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 )}
                 <Footer />
             </div>
-        </Router>
+        </>
     );
 };
 
