@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { addCourse, updateCourse, removeCourse, setError } from '../../redux/coursesSlice'; // Updated import
-import 'bootstrap/dist/css/bootstrap.min.css'; // Импортируем стили Bootstrap
+import { addCourse, updateCourse, removeCourse, setError } from '../../redux/coursesSlice'; 
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 const CourseComponent = () => {
   const dispatch = useDispatch();

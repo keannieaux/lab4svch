@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { addCourse, updateCourse, removeCourse, setError } from '../../redux/coursesSlice'; // Updated import
-import 'bootstrap/dist/css/bootstrap.min.css'; // Импортируем стили Bootstrap
+import { addCourse, updateCourse, removeCourse, setError } from '../../redux/coursesSlice'; 
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 
 const CourseComponent = () => {
-  const courses = useSelector(state => state.courses.items); // Updated state selector
+  const courses = useSelector(state => state.courses.items); 
   const dispatch = useDispatch();
 
-  const [newCourse, setNewCourse] = useState({ id: '', name: '' }); // Updated state
+  const [newCourse, setNewCourse] = useState({ id: '', name: '' }); 
   const [editCourseId, setEditCourseId] = useState(null);
   const [editName, setEditName] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
@@ -31,13 +31,13 @@ const CourseComponent = () => {
 
     dispatch(addCourse({ id: courseId, name: newCourse.name }));
     setNewCourse({ id: '', name: '' });
-    setErrorMessage(''); // Сброс сообщения об ошибке
+    setErrorMessage(''); 
   };
 
   const handleEdit = (course) => {
     setEditCourseId(course.id);
     setEditName(course.name);
-    setErrorMessage(''); // Сброс сообщения об ошибке
+    setErrorMessage(''); 
   };
 
   const handleSave = (id) => {
@@ -47,7 +47,7 @@ const CourseComponent = () => {
     }
     dispatch(updateCourse({ id, updates: { name: editName } }));
     setEditCourseId(null);
-    setErrorMessage(''); // Сброс сообщения об ошибке
+    setErrorMessage(''); 
   };
 
   const handleRemove = (courseId) => {
