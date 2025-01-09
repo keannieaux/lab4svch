@@ -70,7 +70,7 @@ const CourseComponent = () => {
 
   return (
     <div className="container mt-5">
-      <h2>Courses</h2>
+      <h2>Users</h2>
 
       {/* Отображение сообщения об ошибке */}
       {errorMessage && <div className="alert alert-danger">{errorMessage}</div>}
@@ -103,7 +103,7 @@ const CourseComponent = () => {
           value={newCourse.name}
           onChange={(e) => setNewCourse({ ...newCourse, name: e.target.value })}
         />
-        <button className="btn btn-primary" onClick={handleAdd}>Add Course</button>
+        <button className="btn btn-primary" onClick={handleAdd}>Add</button>
       </div>
 
       <ul className="list-group">

@@ -16,7 +16,7 @@ const CourseComponent = () => {
 
   const handleAdd = () => {
     const itemId = Number(newItem.id);
-    dispatch(setError(null)); // Clear previous errors
+    dispatch(setError(null)); 
 
     if (isNaN(itemId) || itemId <= 0) {
       return dispatch(setError('ID должен быть положительным числом.'));
