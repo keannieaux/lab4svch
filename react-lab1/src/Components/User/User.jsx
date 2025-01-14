@@ -12,7 +12,7 @@ const CourseComponent = () => {
   const [editName, setEditName] = useState('');
   const [searchTerm, setSearchTerm] = useState('');
   const [sortOrder, setSortOrder] = useState('asc');
-  const [errorMessage, setErrorMessage] = useState(''); // Состояние для хранения сообщения об ошибке
+  const [errorMessage, setErrorMessage] = useState(''); 
 
   const handleAdd = () => {
     const courseId = Number(newCourse.id);
