@@ -16,7 +16,7 @@ const coursesSlice = createSlice({
       const { id, updates } = action.payload;
       const index = state.items.findIndex(item => item.id === id);
       if (index !== -1) {
-          state.items[index] = { ...state.items[index], ...updates }; // Merge updates with existing item
+          state.items[index] = { ...state.items[index], ...updates }; 
       } else {
           state.error = 'Course item not found';
       }
